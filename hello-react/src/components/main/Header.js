@@ -1,46 +1,33 @@
-import React, {Component} from 'react';
-import {Icon,Box,SearchField,IconButton} from "gestalt";
+import React, { Component } from "react";
+import { Box, Image } from "gestalt";
 
-import 'gestalt/dist/gestalt.css';
-import './main.css';
-import './header.css';
+import "gestalt/dist/gestalt.css";
+import "../../style.css";
+import "./main.css";
+import Searchbar from "./Searchbar";
+import Menu from "./Menu";
 
 class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { value: "" };
   }
 
   render() {
     return (
-      <Box color="white" shape="rounded" padding={3} display="flex" direction="row" alignItems="center">
-        <Box padding={3}>
-          <Icon
-            icon="pinterest"
-            color="red"
-            size={20}
-            accessibilityLabel="Pinterest"
-          />
-        </Box>
-        <Box flex="grow" paddingX={2}>
-          <SearchField
-            accessibilityLabel="Demo Search Field"
-            id="searchField"
-            onChange={({ value }) => this.setState({ value })}
-            placeholder="Search and explore"
-            value={this.state.value}
-          />
-        </Box>
-        <Box paddingX={2}>
-          <IconButton
-            accessibilityLabel="Notifications"
-            icon="speech-ellipsis"
-            size="md"
-          />
-        </Box>
-        <Box paddingX={2}>
-          <IconButton accessibilityLabel="Profile" icon="person" size="md" />
-        </Box>
+      <Box column={12} Height={350} paddingX={2}>
+        <Image
+          alt="Tropic greens: The taste of Petrol and Porcelain | Interior design, Vintage Sets and Unique Pieces agave"
+          color="rgb(231, 186, 176)"
+          naturalHeight={350}
+          naturalWidth={564}
+          src="./img/main.jpeg"
+        >
+          <Menu />
+          <Box>
+            <Searchbar />
+          </Box>
+        </Image>
       </Box>
     );
   }

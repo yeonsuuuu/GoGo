@@ -3,7 +3,6 @@ import { Letterbox, Image, Box } from "gestalt";
 
 import "gestalt/dist/gestalt.css";
 import "./main.css";
-import "./center.css";
 
 class Center extends Component {
   render() {

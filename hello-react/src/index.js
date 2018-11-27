@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
 import ReactDOM from "react-dom";
-import { Text } from 'gestalt';
-import 'gestalt/dist/gestalt.css';
+import Main from './components/main/Main';
+import './style.css';
 
 class App extends Component {
   render(){
     return(
-      <div className="App">
-        Drunken Gals hahaha
+      <div>
+        <Main></Main>
       </div>
     );
   }
 }
 
-ReactDOM.render(
-  <App />, 
-  document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector("#root"));

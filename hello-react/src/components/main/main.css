@@ -1,2 +1,26 @@
 @import '~antd/dist/antd.css';
 
+.layout{
+  height:1800px;
+}
+
+.header{
+  height:400px;
+  background-color: black;
+}
+
+.content{
+  height:1200px;
+}
+.slider{
+  height:600px;
+}
+
+.registration{
+  height:600px;
+}
+
+.footer{
+  height:200px;
+  background-color: gray;
+}

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from "react-dom";
 import Main from './components/main/Main';
-import './style.css';
+import './App.css';
 
 class App extends Component {
   render(){

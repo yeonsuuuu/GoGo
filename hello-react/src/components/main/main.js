@@ -1,21 +1,38 @@
-import React, {Component,Fragment} from 'react';
-import Header from './Header';
-import Center from './Center';
-import Registration from './Registration';
-import Footer from './Footer';
+import React, { Component } from "react";
+import Title from "./Title";
+import Slider from "./Slider";
+import Registration from "./Registration"
+import FooterSection from "./FooterSection";
 
-import 'gestalt/dist/gestalt.css';
-import './main.css';
+/* Gestalt */
+import "gestalt/dist/gestalt.css";
+import "./main.css";
+
+/* Ant Design */
+import { Layout } from "antd";
+const { Header, Footer, Content } = Layout;
 
 class Main extends Component {
   render() {
     return (
-      <Fragment>
-        <Header></Header>
-        <Center></Center>
-        <Registration></Registration>
-        <Footer></Footer>
-      </Fragment>
+      <div>
+        <Layout className="layout">
+
+          <Header className="header">
+            <Title></Title>
+          </Header>
+
+          <Content className="content">
+            <Slider className="slider"></Slider>
+            <Registration className="registration"></Registration>
+          </Content>
+
+          <Footer className="footer">
+            <FooterSection></FooterSection>
+          </Footer>
+
+        </Layout>
+      </div>
     );
   }
 }

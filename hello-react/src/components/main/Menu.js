@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import {Box,IconButton} from "gestalt";
 
-import 'gestalt/dist/gestalt.css';
-import '../../style.css';
-import './main.css';
-
 class Menu extends Component {
   constructor(props) {
     super(props);

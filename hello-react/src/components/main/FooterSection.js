@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import { Box, Text } from "gestalt";
-
-import "gestalt/dist/gestalt.css";
-import "../../style.css";
-import "./main.css";
 
 class Footer extends Component {
   constructor(props) {
@@ -13,9 +8,7 @@ class Footer extends Component {
 
   render() {
     return (
-      <Box marginBottom={2}>
-        <Text color="white">White</Text>
-      </Box>
+      <div></div>
     );
   }
 }

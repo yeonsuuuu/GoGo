@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import { Box, SearchField } from "gestalt";
-
-import "gestalt/dist/gestalt.css";
-import "../../style.css";
-import "./main.css";
 
 class Searchbar extends Component {
   constructor(props) {
@@ -13,15 +8,7 @@ class Searchbar extends Component {
 
   render() {
     return (
-      <Box column={6} margin={10}>
-        <SearchField
-          accessibilityLabel="Demo Search Field"
-          id="searchField"
-          onChange={({ value }) => this.setState({ value })}
-          placeholder="Search and explore"
-          value={this.state.value}
-        />
-      </Box>
+      <div></div>
     );
   }
 }
